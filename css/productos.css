@@ -25,29 +25,7 @@
     margin-bottom: 4rem;
 }
 
-.container{
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 9px;
-    padding-right: 9px;
-    
-}
 
-.row{
-    margin-left: -9px;
-    margin-right: -9px;
-}
 
-.col-sm-4{
-    width: 100%;
-    float: left;
-    position: relative;
-    min-height: 0.1rem;
-    padding-left: 0.9rem;
-    padding-right: 0.9rem;
-}
-@media (min-width: 768px){
-    .col-sm-4{
-        width: 30.33%;
-    }
-}
+
+

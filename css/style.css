@@ -10,21 +10,16 @@
     box-sizing: border-box;
 }
 /*Globales*/
-html{
-    font-size: 68.5%;
-}
-
 
 
 body{
     font-size: 16px;
-    margin: 0;
     min-height: 100%;
     background-image: linear-gradient(to top, #f8f7cd 0%, white 100%);
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: var(--negro);
     margin: 0 1rem;
 }
@@ -34,11 +29,6 @@ li{
 }
 
 h2{
-    text-align: center;
-}
-
-
-.texto-centrado{
     text-align: center;
 }
 
@@ -243,7 +233,7 @@ h2{
         font-size: 0.5rem;
         padding-top: 2rem;
         padding-bottom: 0;
-        width: 90%;
+        width: 100%;
     }
     .footer a{
         font-size: 0.8rem;
