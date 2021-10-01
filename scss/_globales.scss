@@ -1,0 +1,60 @@
+/*Globales*/
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+$blanco: #ffffff;
+$negro: #000000;
+$rojo: #ff0000;
+$gris: #757575;
+$amarillo: #FFC107;
+
+
+
+body {
+  font-size: 16px;
+  min-height: 100%;
+  background-image: linear-gradient(to top, #f8f7cd 0%, white 100%);
+
+  a {
+    text-decoration: none !important;
+    color: var(--negro);
+    margin: 0 1rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .zoom {
+    transition: transform 0.5s;
+  }
+
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+
+  .txt-brillo {
+    color: var(--blanco);
+    transition: all 0.8s;
+  }
+
+  .txt-brillo:hover {
+    color: var(--rojo);
+    text-shadow: 0rem 0rem 5rem, 0rem 0rem 10rem, 0rem 0rem 15rem;
+  }
+
+  .texto-centrado{
+    text-align: center;
+  }
+}

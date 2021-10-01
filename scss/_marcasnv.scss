@@ -1,0 +1,18 @@
+/*Nav bg marcas de motos*/
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    .logo-navegacion {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+  
+    @media (min-width: 768px) {
+      .logo-navegacion {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+  }

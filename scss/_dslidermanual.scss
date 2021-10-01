@@ -1,0 +1,57 @@
+/*Destacados slider manual*/
+
+.slider-manual{
+    width: 50%;
+    height: 30rem;
+    margin: auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media (max-width:768px) {
+        .slider-manual{
+            height: 18rem;   
+        }
+    }
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.7s;
+        box-shadow: 0 0 0 1.5rem $negro;           
+    }
+
+    input[type="radio"]{
+        display: none;
+    }
+
+    input[type="radio"]:checked ~ img{
+        opacity: 1;
+    }
+
+    input[type="radio"] + label{
+        display: none;
+        position: relative;
+        z-index: 50;
+        margin: 1rem;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        background: $blanco;
+        border-radius: 50%;
+        border: 0.2rem solid $negro;
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked + label{
+        background: $negro;
+        border: 0.2rem solid $blanco;
+    }
+}

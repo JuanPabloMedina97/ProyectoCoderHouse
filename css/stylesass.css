@@ -1,0 +1,285 @@
+/*Globales*/
+*:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  min-height: 100%;
+  background-image: linear-gradient(to top, #f8f7cd 0%, white 100%); }
+  body a {
+    text-decoration: none !important;
+    color: var(--negro);
+    margin: 0 1rem; }
+  body li {
+    list-style: none; }
+  body h2 {
+    text-align: center; }
+  body .contenedor {
+    margin: 0 auto;
+    max-width: 1200px; }
+  body .zoom {
+    transition: transform 0.5s; }
+  body .zoom:hover {
+    transform: scale(1.2); }
+  body .txt-brillo {
+    color: var(--blanco);
+    transition: all 0.8s; }
+  body .txt-brillo:hover {
+    color: var(--rojo);
+    text-shadow: 0rem 0rem 5rem, 0rem 0rem 10rem, 0rem 0rem 15rem; }
+  body .texto-centrado {
+    text-align: center; }
+
+/*Contacto*/
+.formulario {
+  background-color: #757575;
+  padding: 2rem;
+  border-radius: 10px;
+  scroll-snap-align: center;
+  scroll-snap-stop: always; }
+  .formulario legend {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #FFC107;
+    margin-bottom: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700; }
+  @media (min-width: 768px) {
+    .formulario .formulario {
+      max-width: 800px;
+      margin: 0 auto; } }
+  .formulario .contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .formulario .contenedor-campos .campo {
+      margin-bottom: 1rem;
+      width: 100%; }
+      @media (min-width: 480px) {
+        .formulario .contenedor-campos .campo .campo {
+          display: flex;
+          align-items: center; } }
+      @media (min-width: 768px) {
+        .formulario .contenedor-campos .campo .campo {
+          flex: 0 0 calc(50% - .5rem); } }
+      .formulario .contenedor-campos .campo label {
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: .5rem;
+        display: block; }
+      @media (min-width: 480px) {
+        .formulario .contenedor-campos .campo .campo label {
+          flex: 0 0 90px; } }
+      .formulario .contenedor-campos .campo input[type="text"],
+      .formulario .contenedor-campos .campo input[type="tel"],
+      .formulario .contenedor-campos .campo input[type="mail"],
+      .formulario .contenedor-campos .campo textarea {
+        width: 100%;
+        padding: .5rem;
+        border: none;
+        border-radius: .5rem; }
+      @media (min-width: 768px) {
+        .formulario .contenedor-campos .campo :is(.campo) :is(
+        input[type="text"],
+        input[type="text"],
+        input[type="tel"],
+        input[type="mail"],
+        textarea) {
+          flex: 1; } }
+      .formulario .contenedor-campos .campo .w-100 {
+        flex: 0 0 100%; }
+      .formulario .contenedor-campos .campo textarea {
+        height: 4rem; }
+  .formulario .enviar {
+    display: flex;
+    justify-content: center; }
+  .formulario .boton {
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: .5rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: none; }
+  .formulario .boton:hover {
+    cursor: pointer; }
+
+/*Destacados slider manual*/
+.slider-manual {
+  width: 50%;
+  height: 30rem;
+  margin: auto;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  @media (max-width: 768px) {
+    .slider-manual .slider-manual {
+      height: 18rem; } }
+  .slider-manual img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.7s;
+    box-shadow: 0 0 0 1.5rem #000000; }
+  .slider-manual input[type="radio"] {
+    display: none; }
+  .slider-manual input[type="radio"]:checked ~ img {
+    opacity: 1; }
+  .slider-manual input[type="radio"] + label {
+    display: none;
+    position: relative;
+    z-index: 50;
+    margin: 1rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 0.2rem solid #000000;
+    cursor: pointer; }
+  .slider-manual input[type="radio"]:checked + label {
+    background: #000000;
+    border: 0.2rem solid #ffffff; }
+
+/*Footer*/
+.footer {
+  background-color: #000000;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    .footer .footer {
+      display: flex;
+      font-size: 0.5rem;
+      padding-top: 2rem;
+      padding-bottom: 0;
+      width: 100%; }
+      .footer .footer a {
+        font-size: 0.8rem; }
+      .footer .footer svg {
+        width: 2rem; } }
+  .footer a {
+    color: #ffffff; }
+  .footer .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; }
+
+/*Header*/
+.header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem; }
+  .header a {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .header .logo-principal {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    left: 0; }
+
+/*Nav bg marcas de motos*/
+.navegacion {
+  display: flex;
+  justify-content: center; }
+  .navegacion .logo-navegacion {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%; }
+  @media (min-width: 768px) {
+    .navegacion .logo-navegacion {
+      width: 8rem;
+      height: 8rem; } }
+
+.contenedor-main {
+  width: 90%;
+  margin: 0 auto; }
+  .contenedor-main .sobre-nosotros img {
+    max-width: 100%; }
+  @media (min-width: 768px) {
+    .contenedor-main .sobre-nosotros {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem; }
+    .contenedor-main img {
+      max-width: 100%; } }
+
+/*Productoss*/
+.productos {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  margin: 0 auto; }
+  .productos img {
+    vertical-align: middle; }
+  .productos .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; }
+  .productos h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: -0.5rem;
+    margin-bottom: 4rem; }
+
+/*Galeria slider motos*/
+.slider {
+  width: 90%;
+  height: 40rem;
+  margin: auto;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .slider .slider {
+      width: 95%;
+      height: auto;
+      margin: auto; } }
+  .slider ul {
+    padding: 0;
+    display: flex;
+    width: 600%;
+    animation: cambio 40s infinite; }
+  .slider li {
+    width: 100%; }
+  .slider img {
+    width: 100%;
+    height: 60rem; }
+
+@keyframes cambio {
+  0% {
+    margin-left: 0; }
+  10% {
+    margin-left: 0; }
+  18% {
+    margin-left: -100%; }
+  26% {
+    margin-left: -100%; }
+  34% {
+    margin-left: -200%; }
+  42% {
+    margin-left: -200%; }
+  50% {
+    margin-left: -300%; }
+  58% {
+    margin-left: -300%; }
+  66% {
+    margin-left: -400%; }
+  74% {
+    margin-left: -400%; }
+  82% {
+    margin-left: -500%; }
+  90% {
+    margin-left: -500%; } }

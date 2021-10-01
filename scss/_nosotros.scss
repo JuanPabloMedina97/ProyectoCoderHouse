@@ -1,0 +1,20 @@
+.contenedor-main {
+  width: 90%;
+  margin: 0 auto;
+
+  .sobre-nosotros img {
+    max-width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .sobre-nosotros {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
