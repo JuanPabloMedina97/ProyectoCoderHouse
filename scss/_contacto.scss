@@ -104,6 +104,12 @@
         font-size: 1.2rem;
         border:none;
     }
+
+    .botonRojo{
+        @extend .boton;
+        background-color: $rojo;
+    }
+
     .boton:hover{
         cursor: pointer;
     }
