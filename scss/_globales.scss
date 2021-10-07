@@ -19,7 +19,7 @@ body {
 
   a {
     text-decoration: none !important;
-    color: var(--negro);
+    color: $negro;
     margin: 0 1rem;
   }
 
@@ -38,6 +38,7 @@ body {
 
   .zoom {
     transition: transform 0.5s;
+    
   }
 
   .zoom:hover {
@@ -45,12 +46,12 @@ body {
   }
 
   .txt-brillo {
-    color: var(--blanco);
+    color: $blanco ; 
     transition: all 0.8s;
   }
 
   .txt-brillo:hover {
-    color: var(--rojo);
+    color: $rojo;
     text-shadow: 0rem 0rem 5rem, 0rem 0rem 10rem, 0rem 0rem 15rem;
   }
 

@@ -8,7 +8,7 @@ body {
   background-image: linear-gradient(to top, #f8f7cd 0%, white 100%); }
   body a {
     text-decoration: none !important;
-    color: var(--negro);
+    color: #000000;
     margin: 0 1rem; }
   body li {
     list-style: none; }
@@ -22,10 +22,10 @@ body {
   body .zoom:hover {
     transform: scale(1.2); }
   body .txt-brillo {
-    color: var(--blanco);
+    color: #ffffff;
     transition: all 0.8s; }
   body .txt-brillo:hover {
-    color: var(--rojo);
+    color: #ff0000;
     text-shadow: 0rem 0rem 5rem, 0rem 0rem 10rem, 0rem 0rem 15rem; }
   body .texto-centrado {
     text-align: center; }
