@@ -2,7 +2,7 @@
 
 .slider-manual{
     width: 50%;
-    height: 30rem;
+    height: 25rem;
     margin: auto;
     position: relative;
     list-style: none;
@@ -10,12 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
-    @media (max-width:768px) {
-        .slider-manual{
-            height: 18rem;   
-        }
-    }
 
     img{
         position: absolute;

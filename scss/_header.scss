@@ -3,7 +3,13 @@
 .header {
     display: flex;
     justify-content: center;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      .header {
+        padding-bottom: 2rem;
+      }
+    }
   
     a {
       width: 30rem;
@@ -18,4 +24,13 @@
       position: absolute;
       left: 0;
     }
+    
+    @media (max-width: 768px){
+      .logo-principal{
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+
+
   }
