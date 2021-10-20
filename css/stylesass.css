@@ -4,8 +4,7 @@
 
 body {
   font-size: 16px;
-  min-height: 100%;
-  background-image: linear-gradient(to top, #f8f7cd 0%, white 100%); }
+  min-height: 100%; }
   body a {
     text-decoration: none !important;
     color: #000000;
@@ -29,6 +28,9 @@ body {
     text-shadow: 0rem 0rem 5rem, 0rem 0rem 10rem, 0rem 0rem 15rem; }
   body .texto-centrado {
     text-align: center; }
+
+.gradient {
+  background-image: linear-gradient(to top, #f8f7cd 0%, white 100%) !important; }
 
 .padding-b {
   padding-bottom: 5rem !important; }
@@ -244,6 +246,28 @@ body {
     font-weight: 700;
     margin-top: -0.5rem;
     margin-bottom: 4rem; }
+
+/*Motos*/
+.container-fluid .header-moto .titulo-moto {
+  color: #ffffff;
+  text-align: center;
+  padding: 21%;
+  background: url("/yamaha/yz85/header.jpg") no-repeat center fixed;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.container-fluid .texto-section {
+  background-color: #f2f2f2;
+  height: 100%; }
+  .container-fluid .texto-section .separador {
+    background-image: url("/img/husqvarna-motorcycles-pricing-top.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1rem;
+    background-position: center;
+    margin: 0 auto; }
+  .container-fluid .texto-section h2, .container-fluid .texto-section p {
+    color: #002550 !important; }
 
 /*Galeria slider motos*/
 .slider {

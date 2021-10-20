@@ -24,3 +24,44 @@
         margin-bottom: 4rem;
     }
 }
+
+/*Motos*/
+
+
+
+
+
+.container-fluid{
+    .header-moto{
+
+        .titulo-moto{
+            color: $blanco;
+            text-align: center;
+            padding: 21%;
+            background: url("/yamaha/yz85/header.jpg") no-repeat center fixed;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+    }
+
+    .texto-section{
+        background-color: $gris-moto;
+        height: 100%;
+
+        .separador{
+            background-image: url("/img/husqvarna-motorcycles-pricing-top.svg");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 1rem;
+            background-position: center;
+            margin: 0 auto;
+
+        }
+
+        h2, p{
+            color: $azul !important;
+        }
+    }
+}
+
+
