@@ -251,10 +251,11 @@ body {
 .container-fluid .header-moto, .container-fluid .yz85, .container-fluid .crf450r, .container-fluid .ktm350sx-f, .container-fluid .kx450x, .container-fluid .te-300i {
   background-size: cover;
   background-position: 50% 50%; }
-  .container-fluid .header-moto .titulo-moto, .container-fluid .yz85 .titulo-moto, .container-fluid .crf450r .titulo-moto, .container-fluid .ktm350sx-f .titulo-moto, .container-fluid .kx450x .titulo-moto, .container-fluid .te-300i .titulo-moto {
-    color: #ffffff;
-    text-align: center;
-    padding: 21%; }
+
+.container-fluid .titulo-moto {
+  color: #ffffff;
+  text-align: center;
+  padding: 21%; }
 
 .container-fluid .texto-section {
   background-color: #f2f2f2;
