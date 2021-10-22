@@ -248,13 +248,13 @@ body {
     margin-bottom: 4rem; }
 
 /*Motos*/
-.container-fluid .header-moto .titulo-moto {
-  color: #ffffff;
-  text-align: center;
-  padding: 21%;
-  background: url("/yamaha/yz85/header.jpg") no-repeat center fixed;
+.container-fluid .header-moto, .container-fluid .yz85, .container-fluid .crf450r, .container-fluid .ktm350sx-f, .container-fluid .kx450x, .container-fluid .te-300i {
   background-size: cover;
   background-position: 50% 50%; }
+  .container-fluid .header-moto .titulo-moto, .container-fluid .yz85 .titulo-moto, .container-fluid .crf450r .titulo-moto, .container-fluid .ktm350sx-f .titulo-moto, .container-fluid .kx450x .titulo-moto, .container-fluid .te-300i .titulo-moto {
+    color: #ffffff;
+    text-align: center;
+    padding: 21%; }
 
 .container-fluid .texto-section {
   background-color: #f2f2f2;
@@ -268,6 +268,27 @@ body {
     margin: 0 auto; }
   .container-fluid .texto-section h2, .container-fluid .texto-section p {
     color: #002550 !important; }
+
+/*Background header motos*/
+/*Yamaha*/
+.yz85 {
+  background: url("/yamaha/yz85/header.jpg") no-repeat center fixed; }
+
+/*Honda*/
+.crf450r {
+  background: url("/honda/crf450R/header.jpg") no-repeat center fixed; }
+
+/*ktm*/
+.ktm350sx-f {
+  background: url("/ktm/350sx-f/header.jpg") no-repeat center fixed; }
+
+/*Kawazaki*/
+.kx450x {
+  background: url("/kawazaki/kx450x/header.jpeg") no-repeat center fixed; }
+
+/*Husqvarna*/
+.te-300i {
+  background: url("/husqvarna/te-300i/header.jpg") no-repeat center fixed; }
 
 /*Galeria slider motos*/
 .slider {

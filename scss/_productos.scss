@@ -32,16 +32,16 @@
 
 
 .container-fluid{
-    .header-moto{
 
-        .titulo-moto{
-            color: $blanco;
-            text-align: center;
-            padding: 21%;
-            background: url("/yamaha/yz85/header.jpg") no-repeat center fixed;
-            background-size: cover;
-            background-position: 50% 50%;
-        }
+    .header-moto{
+        background-size: cover;
+        background-position: 50% 50%;
+
+            .titulo-moto{
+                color: $blanco;
+                text-align: center;
+                padding: 21%;
+            }
     }
 
     .texto-section{
@@ -65,3 +65,40 @@
 }
 
 
+/*Background header motos*/
+/*Yamaha*/
+
+.yz85{
+    @extend .header-moto;
+    background: url("/yamaha/yz85/header.jpg") no-repeat center fixed;  
+}
+
+
+
+/*Honda*/
+
+.crf450r{
+    @extend .header-moto;
+    background: url("/honda/crf450R/header.jpg") no-repeat center fixed;
+}
+
+/*ktm*/
+
+.ktm350sx-f{
+    @extend .header-moto;
+    background: url("/ktm/350sx-f/header.jpg") no-repeat center fixed; 
+}
+
+/*Kawazaki*/
+
+.kx450x{
+    @extend .header-moto;
+    background: url("/kawazaki/kx450x/header.jpeg") no-repeat center fixed;         
+}
+
+/*Husqvarna*/
+
+.te-300i{
+    @extend .header-moto;
+    background: url("/husqvarna/te-300i/header.jpg") no-repeat center fixed;
+}
