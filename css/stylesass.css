@@ -248,26 +248,26 @@ body {
     margin-bottom: 4rem; }
 
 /*Motos*/
-.contenedor-img .header-moto, .contenedor-img .yz85, .contenedor-img .crf450r, .contenedor-img .ktm350sx-f, .contenedor-img .kx450x, .contenedor-img .te-300i {
+.container-fluid .header-moto, .container-fluid .yz85, .container-fluid .crf450r, .container-fluid .ktm350sx-f, .container-fluid .kx450x, .container-fluid .te-300i {
   background-size: cover;
   background-position: 50% 50%; }
 
-.contenedor-img .titulo-moto {
+.container-fluid .titulo-moto {
   color: #ffffff;
   text-align: center;
   padding: 21%; }
 
-.contenedor-img .texto-section {
+.container-fluid .texto-section {
   background-color: #f2f2f2;
   height: 100%; }
-  .contenedor-img .texto-section .separador {
+  .container-fluid .texto-section .separador {
     background-image: url("/img/husqvarna-motorcycles-pricing-top.svg");
     background-repeat: no-repeat;
     width: 100%;
     height: 1rem;
     background-position: center;
     margin: 0 auto; }
-  .contenedor-img .texto-section h2, .contenedor-img .texto-section p {
+  .container-fluid .texto-section h2, .container-fluid .texto-section p {
     color: #002550 !important; }
 
 /*Background header motos*/

@@ -31,13 +31,13 @@
 
 
 
-.contenedor-img{
+.container-fluid{
 
     .header-moto{
         background-size: cover;
         background-position: 50% 50%;       
     }
-
+    
     .titulo-moto{
         color: $blanco;
         text-align: center;
@@ -68,18 +68,17 @@
 /*Background header motos*/
 /*Yamaha*/
 
-.yz85{
+.yz85 {
     @extend .header-moto;
     background: url("/yamaha/yz85/header.jpg") no-repeat center fixed;  
 }
-
 
 
 /*Honda*/
 
 .crf450r{
     @extend .header-moto;
-    background: url("/honda/crf450R/header.jpg") no-repeat center fixed;
+    background: url("/honda/crf450R/header.jpg") no-repeat center fixed;   
 }
 
 /*ktm*/
